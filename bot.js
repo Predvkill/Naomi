@@ -101,7 +101,7 @@ client.on('message', message => {
             const embed = new Discord.RichEmbed()
             .setAuthor("Rainbow", client.user.avatarURL)
             .setColor(0xF44336)
-            .setDescription("Usage: **`r(rainbow (role name)`**")
+            .setDescription("Usage: **`TDNrainbow : (role name)`**")
             message.channel.send({embed});
             return;
         }
@@ -129,7 +129,7 @@ client.on('message', message => {
         const embed = new Discord.RichEmbed()
         .setAuthor("Rainbow", client.user.avatarURL)
         .setColor(0x4CAF50)
-        .setDescription("Successfully applied rainbow colors to **`" + args.join(" ") + "`**" + "\n" +
+        .setDescription("Successfully applied TDN rainbow colors to **`" + args.join(" ") + "`**" + "\n" +
         "Note: this only lasts 72 hours, then it will stop. You can still apply it whenever you'd like!")
         message.channel.send({embed});
  
