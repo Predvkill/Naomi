@@ -8,8 +8,8 @@ const prefix = "1"
  
  client.on("ready", async () => {
     console.log(`Logged in as ${client.user.tag}!`);
- 
-    client.user.setGame(`☆ TheDamNation™ ☆`, {type: "2"});
+    client.user.setStatus("dnd")
+ client.user.setGame(`TheDamNation™`,`https://www.twitch.tv/TheRealPredvkill`);
  
   });
     client.setInterval(() =>{
