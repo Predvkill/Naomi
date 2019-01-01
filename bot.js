@@ -81,7 +81,7 @@ client.on('message', message => {
     if(command === "rainbow") {
         if(!message.member.hasPermission("ADMINISTRATOR")) {
             const embed = new Discord.RichEmbed()
-            .setAuthor("Rainbow", client.user.avatarURL)
+            .setAuthor("Naomi Rainbow", client.user.avatarURL)
             .setColor(0xF44336)
             .setDescription("You must have the administrator permission!")
             message.channel.send({embed});
@@ -90,7 +90,7 @@ client.on('message', message => {
  
         if(!message.guild.me.hasPermission("ADMINISTRATOR")) {
             const embed = new Discord.RichEmbed()
-            .setAuthor("Rainbow", client.user.avatarURL)
+            .setAuthor("Naomi Rainbow", client.user.avatarURL)
             .setColor(0xF44336)
             .setDescription("I must have the administrator permission!")
             message.channel.send({embed});
@@ -99,7 +99,7 @@ client.on('message', message => {
        
         if(!message.member.guild.roles.find("name", args.join(" "))) {
             const embed = new Discord.RichEmbed()
-            .setAuthor("Rainbow", client.user.avatarURL)
+            .setAuthor("Naomi Rainbow", client.user.avatarURL)
             .setColor(0xF44336)
             .setDescription("Usage: **`TDNrainbow : (role name)`**")
             message.channel.send({embed});
@@ -108,7 +108,7 @@ client.on('message', message => {
  
         if(message.member.guild.roles.find("name", args.join(" ")) === null) {
             const embed = new Discord.RichEmbed()
-            .setAuthor("Rainbow", client.user.avatarURL)
+            .setAuthor("Naomi Rainbow", client.user.avatarURL)
             .setColor(0xF44336)
             .setDescription("Something went wrong.")
             message.channel.send({embed});
@@ -118,7 +118,7 @@ client.on('message', message => {
  
         if(message.member.guild.roles.find("name", args.join(" ")).position >= message.guild.me.highestRole.position) {
             const embed = new Discord.RichEmbed()
-            .setAuthor("Rainbow", client.user.avatarURL)
+            .setAuthor("Naomi Rainbow", client.user.avatarURL)
             .setColor(0xF44336)
             .setDescription("My **RainColor** role must be higher than the mentioned role!")
             message.channel.send({embed});
@@ -127,9 +127,9 @@ client.on('message', message => {
  
  
         const embed = new Discord.RichEmbed()
-        .setAuthor("Rainbow", client.user.avatarURL)
+        .setAuthor("Naomi Rainbow", client.user.avatarURL)
         .setColor(0x4CAF50)
-        .setDescription("Successfully applied TDN rainbow colors to **`" + args.join(" ") + "`**" + "\n" +
+        .setDescription("Successfully applied Naomi Rainbow colors to **`" + args.join(" ") + "`**" + "\n" +
         "Note: this only lasts 72 hours, then it will stop. You can still apply it whenever you'd like!")
         message.channel.send({embed});
  
