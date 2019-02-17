@@ -188,8 +188,8 @@ command = command.slice(prefix.length);
         const embed = new Discord.RichEmbed()
         .setAuthor("SHADDIX - RAINBOWBOT", client.user.avatarURL)
         .setColor(0xE7F436)
-        .setDescription("**:white_check_mark: : Successfully Applied SHADDIX Rainbow Colors To **`" + args.join(" ") + "`**" + "\n" +
-        ":warning: : This Only Lasts (72) Hours, Then it Will Stop Working. You Can Still Apply it Whenever You'd Like ! :warning:**")
+        .setDescription("**:white_check_mark: : Successfully Applied Shaddix Rainbow Colors To **`" + args.join(" ") + "`**" + "\n" +
+        ":warning: : This Only Lasts (72) Hours, Then it Will Stop Working. You Can Still Apply it Whenever You'd Like !**")
         message.channel.send({embed});
 
         client.colors[message.guild.name] = {
