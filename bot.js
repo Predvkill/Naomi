@@ -1,7 +1,7 @@
 const prefix ="$";
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const ownerid = '480540559233122324'
+const ownerid = '529387209078472704'
 
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
@@ -22,7 +22,7 @@ client.on('ready', () => {
     console.log('╚[════════════════════════════════════]╝')
     console.log('')
     console.log('╔[════════════]╗')
-    console.log('Quorra Is Online Now !')
+    console.log('GEM Is Online Now !')
     console.log('╚[════════════]╝')
     console.log('')
     console.log('')
@@ -30,7 +30,7 @@ client.on('ready', () => {
 
 
 client.on('message', message => {
-  if (message.content === ('$Quorra')) {
+  if (message.content === ('$Gem')) {
   message.channel.send({
       embed: new Discord.RichEmbed()
           .setAuthor(client.user.username,client.user.avatarURL)
@@ -57,11 +57,11 @@ client.on('message', message => {
   .setAuthor(message.author.username,message.author.avatarURL)
   .setColor('RANDOM')
   .setDescription(`**
-:rainbow: [❖═════ ● Quorra Rainbow Bot Commands ● ═══════❖] :rainbow:  
+:rainbow: [❖═════ ● GEM Rainbow Bot Commands ● ═══════❖] :rainbow:  
   
 ❖═════════════════════════════════════❖  
 
-● :signal_strength: : $Quorra :arrow_right: STATS BOT ●
+● :signal_strength: : $Gem :arrow_right: STATS BOT ●
 
 ● :rainbow: : $TG :arrow_right: $TG (Role Name) ●
 
@@ -73,7 +73,7 @@ client.on('message', message => {
 
 :zap: ─══ {✯ ● Bot Made By ŦĐŇ™漫Ranger√ ⚡#4474 ● ✯} ══─ :zap:
 
-● The Grid™ - Official :copyright: **`);
+● The DamNation™ - Official :copyright: **`);
 
 message.author.sendEmbed(embed)
   }
@@ -140,7 +140,7 @@ command = command.slice(prefix.length);
     if(command === "TG") {
         if(!message.member.hasPermission("ADMINISTRATOR")) {
             const embed = new Discord.RichEmbed()
-            .setAuthor("QUORRA - RAINBOWBOT", client.user.avatarURL)
+            .setAuthor("GEM - RAINBOWBOT", client.user.avatarURL)
             .setColor(0x4336F4)
             .setDescription("**:warning: You Must Have The Administrator Permission :warning:**")
             message.channel.send({embed});
@@ -149,7 +149,7 @@ command = command.slice(prefix.length);
 
         if(!message.guild.me.hasPermission("ADMINISTRATOR")) {
             const embed = new Discord.RichEmbed()
-            .setAuthor("QUORRA - RAINBOWBOT", client.user.avatarURL)
+            .setAuthor("GEM - RAINBOWBOT", client.user.avatarURL)
             .setColor(0x4336F4)
             .setDescription("**:warning: : I Must Have The Administrator Permission :warning:**")
             message.channel.send({embed});
@@ -158,7 +158,7 @@ command = command.slice(prefix.length);
 
 		if(!message.member.guild.roles.find(role => role.name === args.join(" "))) {
             const embed = new Discord.RichEmbed()
-            .setAuthor("QUORRA - RAINBOWBOT", client.user.avatarURL)
+            .setAuthor("GEM - RAINBOWBOT", client.user.avatarURL)
             .setColor(0x4336F4)
             .setDescription(":rainbow: Usage : **`$TG (Role Name)`** :rainbow:")
             message.channel.send({embed});
@@ -167,7 +167,7 @@ command = command.slice(prefix.length);
 
         if(message.member.guild.roles.find(role => role.name === args.join(" ")) === null) {
             const embed = new Discord.RichEmbed()
-            .setAuthor("QUORRA - RAINBOWBOT", client.user.avatarURL)
+            .setAuthor("GEM - RAINBOWBOT", client.user.avatarURL)
             .setColor(0x4336F4)
             .setDescription(":warning: : **Something Went Wrong** :warning:")
             message.channel.send({embed});
@@ -177,18 +177,18 @@ command = command.slice(prefix.length);
 
         if(message.member.guild.roles.find(role => role.name === args.join(" ")).position >= message.guild.me.highestRole.position) {
             const embed = new Discord.RichEmbed()
-            .setAuthor("QUORRA - RAINBOWBOT", client.user.avatarURL)
+            .setAuthor("GEM - RAINBOWBOT", client.user.avatarURL)
             .setColor(0x4336F4)
-            .setDescription(":warning: : **Quorra : (RainColor) Role Must Be Higher Than The Mentioned Role !** :warning: :")
+            .setDescription(":warning: : **GEM : (RainColor) Role Must Be Higher Than The Mentioned Role !** :warning: :")
             message.channel.send({embed});
             return;
         }
 
 
         const embed = new Discord.RichEmbed()
-        .setAuthor("QUORRA - RAINBOWBOT", client.user.avatarURL)
+        .setAuthor("GEM - RAINBOWBOT", client.user.avatarURL)
         .setColor(0xE7F436)
-        .setDescription("**:white_check_mark: : Successfully Applied Quorra Rainbow Colors To **`" + args.join(" ") + "`**" + "\n" +
+        .setDescription("**:white_check_mark: : Successfully Applied GEM Rainbow Colors To **`" + args.join(" ") + "`**" + "\n" +
         ":warning: : This Only Lasts (72) Hours, Then it Will Stop Working. You Can Still Apply it Whenever You'd Like ! :warning:**")
         message.channel.send({embed});
 
@@ -223,7 +223,7 @@ let place = 0;
 client.on('ready', function(){
   client.user.setStatus("dnd");
     var ms = 10000 ;
-    var setGame = ['★ $help | RainBowBot ★','The Grid™ | Server ' ];
+    var setGame = ['★ $help | RainBowBot ★','TDN™ | Server ' ];
     var i = -1;
     var j = 0;
     setInterval(function (){
@@ -260,7 +260,7 @@ client.on('message', message => {
             .setAuthor(client.user.username,client.user.avatarURL)
             .setThumbnail(client.user.avatarURL)
             .setColor('RANDOM')
-            .setTitle('``QUORRA STATS`` ')
+            .setTitle('``GEM STATS`` ')
             .addField('``Uptime``', [timeCon(process.uptime())], true)
             .addField('``My Ping``' , [`${Date.now() - message.createdTimestamp}` + 'MS'], true)
             .addField('``RAM Usage``', `[${(process.memoryUsage().rss / 1048576).toFixed()}MB]`, true)
