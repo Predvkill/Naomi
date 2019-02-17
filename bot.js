@@ -51,7 +51,8 @@ client.on('message', message => {
 client.on('message', message => {
   if (message.author.bot) return;
    if (message.content === prefix + "help") {
-    
+   if(message.author.id !== "480540559233122324") return message.reply('**:x: SORRY MATE THIS COMMANDS ONLY FOR BOT OWNER :x:**');
+ 
    message.channel.send('**:white_check_mark: ● Done , تــــم ارســالك في الخــاص ● :e_mail:**');
    const embed = new Discord.RichEmbed()
   .setAuthor(message.author.username,message.author.avatarURL)
