@@ -1,2 +1,2 @@
-# XXX
-Discord Bot By Predvkill
+# SHADDIX
+FIGHT FOR USERS
