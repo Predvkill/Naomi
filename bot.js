@@ -39,7 +39,7 @@ client.on('ready', () => {
                msg.edit('**:arrows_counterclockwise: Shaddix Restarting...**');
             },2000);
         });
-        console.log(`${message.author.tag} [ ${message.author.id} ] Jarvis Has Restarted Successfully.`);
+        console.log(`${message.author.tag} [ ${message.author.id} ] Shaddix Has Restarted Successfully.`);
         console.log(`Restarting..`);
         setTimeout(() => {
             client.destroy();
