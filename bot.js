@@ -28,6 +28,25 @@ client.on('ready', () => {
     console.log('')
 });
 
+ client.on('message',async message => {
+    if(message.content.startsWith(prefix + "restart")) {
+        if(message.author.id !== "480540559233122324") return message.reply('**❎ | You Aren\'t The Bot Owner !**');
+        message.channel.send('**Restarting.**').then(msg => {
+            setTimeout(() => {
+               msg.edit('**:arrows_counterclockwise: Shaddix Restarting..**');
+            },1000);
+            setTimeout(() => {
+               msg.edit('**:arrows_counterclockwise: Shaddix Restarting...**');
+            },2000);
+        });
+        console.log(`${message.author.tag} [ ${message.author.id} ] Jarvis Has Restarted Successfully.`);
+        console.log(`Restarting..`);
+        setTimeout(() => {
+            client.destroy();
+            client.login(process.env.BOT_TOKEN);
+        },3000);
+    }
+});
 
 client.on('message', message => {
   if (message.content === ('$Shaddix')) {
