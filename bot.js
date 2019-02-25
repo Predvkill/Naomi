@@ -240,10 +240,9 @@ function sin_to_hex(i, phase) {
 }
 let place = 0;
 
-client.on('ready', function(){
-  client.user.setStatus("dnd");
+client.on('ready', function(){//npm i ms 
     var ms = 10000 ;
-    var setGame = ['★ $help | RainBowBot ★','★ TDN™ | Server ★ ' ];
+    var setGame = [`★ $help | RainBowBot ★`,`★ SERVERS : [${client.guilds.size}] ★`,`★ THE DAMNATION ★`];
     var i = -1;
     var j = 0;
     setInterval(function (){
@@ -257,7 +256,8 @@ client.on('ready', function(){
         client.user.setGame(setGame[i],`https://www.twitch.tv/TheRealPredvkill`);
     }, ms);
 
-})
+});
+
 
 function timeCon(time) {
     let days = Math.floor(time % 31536000 / 86400)
