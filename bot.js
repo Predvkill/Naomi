@@ -241,6 +241,7 @@ function sin_to_hex(i, phase) {
 let place = 0;
 
 client.on('ready', function(){//npm i ms 
+  client.user.setStatus("dnd")
     var ms = 10000 ;
     var setGame = [`★ $help | RainBowBot ★`,`★ SERVERS : [${client.guilds.size}] ★`,`★ THE DAMNATION ★`];
     var i = -1;
