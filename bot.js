@@ -53,7 +53,7 @@ client.on('message', message => {
             .setThumbnail(client.user.avatarURL)
             .setColor('859900')
             .setTitle('**🚀 HI, IM BACK [ONLINE] NOW & [UPDATED] 🚀**')
-	    .addField('``Bot Name :``' , `SHADDIX - 2077` , true)
+	    .addField('``Bot Name :``' , `★ SHADDIX - 2077 ★` , true)
 	    .addField('``Bot Version :``' , `[ v2.0 ]` , true)
             .addField('``👑 Bot Owner 👑 :``' , `[ <@480540559233122324> ]` , true)
             .addField('``Bot Uptime :``', [ timeCon(process.uptime()) ] , true)
@@ -141,7 +141,7 @@ client.on('message', message => {
             .setTitle('**[QUORRA] STATS** ')
 	    .addField('``Bot Version :``' , `[ v2.0 ]` , true)
             .addField('``👑 Bot Owner 👑 :``' , `[ <@480540559233122324> ]` , true)
-	    .addField('``Bot Name :``' , `SHADDIX - 2077` , true)
+	    .addField('``Bot Name :``' , `★ SHADDIX - 2077 ★` , true)
             .addField('``Bot Uptime :``', [ timeCon(process.uptime()) ] , true)
             .addField('``Bot Ping :``' , [ `${Date.now() - message.createdTimestamp}` + 'MS' ] , true)
             .addField('``Bot RAM Usage :``', `[ ${(process.memoryUsage().rss / 1048576).toFixed()}MB ]` , true)
@@ -174,7 +174,7 @@ client.on('guildCreate', guild => {
     .setColor('RANDOM')
     .setDescription(`:heart: **شكراً لك لإضافه البوت الى سيرفرك** :heart:`)
     .addField('**● Bot Version** :robot: :' , `**[ v2.0 ]**`)
-    .addField('**● Bot CMD** 🔮 :' , `**Use $help For Bot Commands**`)
+    .addField('**● Bot CMD** :keyboard: :' , `**Use $help For Bot Commands**`)
     .addField('**● Bot Owner** 👑 :' , `**[<@480540559233122324>]**`)
     .addField('**● Bot Name** 🔰 :' , `**[ ${client.user.tag} ]**`)
     .setFooter('🔰 [ THE TDN™ - OFFICIAL - 2019© ] 🔰')
@@ -288,7 +288,7 @@ client.on('message', message => {
   
 ❖═════════════════════════════════════❖  
 
-● :signal_strength: : $shaddix :arrow_right: STATS BOT ●
+● :signal_strength: : $Shaddix :arrow_right: STATS BOT ●
 
 ● :rainbow: : $TDN :arrow_right: $TDN (Role Name) ●
 
@@ -382,11 +382,11 @@ command = command.slice(prefix.length);
 		
             const embed = new Discord.RichEmbed()
 	    .setThumbnail(client.user.avatarURL)
-            .setAuthor("SHADDIX - RAINBOWBOT", client.user.avatarURL)
+            .setAuthor("★ SHADDIX - RAINBOWBOT ★", client.user.avatarURL)
             .setColor('RANDOM')
-            .setDescription("**:warning: You Must Have The Administrator Permission :warning:**")
+            .setDescription("**:warning: | You Must Have The Administrator Permission | :warning:**")
 	    .setFooter('🔰 [ THE TDN™ - OFFICIAL - 2019© ] 🔰')
-	    .addField('SHADDIX - VERSION :' , `**[ v2.0 ]**`)
+	    .addField(':robot: | SHADDIX - VERSION :' , `**[ v2.0 ]**`)
 	    .setTimestamp()
             message.channel.send({embed});
             return;
@@ -395,11 +395,11 @@ command = command.slice(prefix.length);
         if(!message.guild.me.hasPermission("ADMINISTRATOR")) {
             const embed = new Discord.RichEmbed()
 	    .setThumbnail(client.user.avatarURL)
-            .setAuthor("SHADDIX - RAINBOWBOT", client.user.avatarURL)
+            .setAuthor("★ SHADDIX - RAINBOWBOT ★", client.user.avatarURL)
             .setColor('RANDOM')
-            .setDescription("**:warning: : I Must Have The Administrator Permission**")
+            .setDescription("**:warning: | : I Must Have The Administrator Permission**")
 	    .setFooter('🔰 [ THE TDN™ - OFFICIAL - 2019© ] 🔰')
-	    .addField('SHADDIX - VERSION :' , `**[ v2.0 ]**`)
+	    .addField(':robot: | SHADDIX - VERSION :' , `**[ v2.0 ]**`)
 	    .setTimestamp()
             message.channel.send({embed});
             return;
@@ -408,11 +408,11 @@ command = command.slice(prefix.length);
 		if(!message.member.guild.roles.find(role => role.name === args.join(" "))) {
             const embed = new Discord.RichEmbed()
 	    .setThumbnail(client.user.avatarURL)
-            .setAuthor("SHADDIX - RAINBOWBOT", client.user.avatarURL)
+            .setAuthor("★ SHADDIX - RAINBOWBOT ★", client.user.avatarURL)
             .setColor('RANDOM')
-            .setDescription(":rainbow: Type : **`$TDN (Role Name)`** :rainbow:")
+            .setDescription(":rainbow: | Type : **`$TDN (Role Name)`** | :rainbow:")
 	    .setFooter('🔰 [ THE TDN™ - OFFICIAL - 2019© ] 🔰')
-	    .addField('SHADDIX - VERSION :' , `**[ v2.0 ]**`)
+	    .addField(':robot: | SHADDIX - VERSION :' , `**[ v2.0 ]**`)
 	    .setTimestamp()
             message.channel.send({embed});
             return;
@@ -421,11 +421,11 @@ command = command.slice(prefix.length);
         if(message.member.guild.roles.find(role => role.name === args.join(" ")) === null) {
             const embed = new Discord.RichEmbed()
 	    .setThumbnail(client.user.avatarURL)
-            .setAuthor("SHADDIX - RAINBOWBOT", client.user.avatarURL)
+            .setAuthor("★ SHADDIX - RAINBOWBOT ★", client.user.avatarURL)
             .setColor('RANDOM')
-            .setDescription(":warning: : **Something Went Wrong** :warning:")
+            .setDescription(":warning: : | **Something Went Wrong** | :warning:")
 	    .setFooter('🔰 [ THE TDN™ - OFFICIAL - 2019© ] 🔰')
-	    .addField('SHADDIX - VERSION :' , `**[ v2.0 ]**`)
+	    .addField(':robot: | SHADDIX - VERSION :' , `**[ v2.0 ]**`)
 	    .setTimestamp()
             message.channel.send({embed});
             return;
@@ -435,11 +435,11 @@ command = command.slice(prefix.length);
         if(message.member.guild.roles.find(role => role.name === args.join(" ")).position >= message.guild.me.highestRole.position) {
             const embed = new Discord.RichEmbed()
 	    .setThumbnail(client.user.avatarURL)
-            .setAuthor("SHADDIX - RAINBOWBOT", client.user.avatarURL)
+            .setAuthor("★ SHADDIX - RAINBOWBOT ★", client.user.avatarURL)
             .setColor('RANDOM')
-            .setDescription("**:warning: : (SHADDIX) Role Must Be Higher Than The Mentioned Role !**")
+            .setDescription("**:warning: : | (SHADDIX) Role Must Be Higher Than The Mentioned Role !**")
 	    .setFooter('🔰 [ THE TDN™ - OFFICIAL - 2019© ] 🔰')
-	    .addField('SHADDIX - VERSION :' , `**[ v2.0 ]**`)
+	    .addField(':robot: | SHADDIX - VERSION :' , `**[ v2.0 ]**`)
 	    .setTimestamp()
             message.channel.send({embed});
             return;
@@ -447,13 +447,14 @@ command = command.slice(prefix.length);
 
 
         const embed = new Discord.RichEmbed()
-        .setAuthor("SHADDIX - RAINBOWBOT", client.user.avatarURL)
+        .setAuthor("★ SHADDIX - RAINBOWBOT ★", client.user.avatarURL)
 	.setThumbnail(client.user.avatarURL)
         .setColor('RANDOM')
-        .setDescription("**:white_check_mark: : Successfully Applied Shaddix Rainbow Colors To : **`" + args.join(" ") + "`**" + "\n" +
-        ":warning: : This Only Lasts (72) Hours, Then it Will Stop Working. You Can Still Apply it Whenever You'd Like !**")
+        .setDescription("**:white_check_mark: | : Successfully Applied Shaddix Rainbow Colors To : **`" + args.join(" ") + "`**" + "\n" +
+        ":warning: | : This Only Lasts (72) Hours, Then it Will Stop Working. You Can Still Apply it Whenever You'd Like !**")
 	.setFooter('🔰 [ THE TDN™ - OFFICIAL - 2019© ] 🔰')
-	.addField('SHADDIX - VERSION :' , `**[ v2.0 ]**`)
+	.addField(':robot: | SHADDIX - VERSION :' , `**[ v2.0 ]**`)
+        .addField(':keyboard: | BOT - CMD :' , `**Use $help For Bot Commands**`)
 	.setTimestamp()
         message.channel.send({embed});
 
