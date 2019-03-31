@@ -268,6 +268,7 @@ client.on('message', message => {
 client.on('message', message => {
   if (message.author.bot) return;
    if (message.content === prefix + "help") {
+    if(!message.channel.guild) return message.reply('**:x: This Command Only For Servers :x:**').then(m => m.delete(60000));
        if(!message.content.startsWith(prefix)) return;
          if(cooldown.has(message.author.id)){
     message.delete();
