@@ -455,6 +455,7 @@ command = command.slice(prefix.length);
         ":warning: | : This Only Lasts (72) Hours, Then it Will Stop Working. You Can Still Apply it Whenever You'd Like !**")
 	.setFooter('🔰 [ THE TDN™ - OFFICIAL - 2019© ] 🔰')
 	.addField(':robot: | SHADDIX - VERSION :' , `**[ v2.0 ]**`)
+	.addField('👑 | BOT - OWNER :' , `**[ <@480540559233122324> ]**`)
         .addField(':keyboard: | BOT - CMD :' , `**Use $help For Bot Commands**`)
 	.setTimestamp()
         message.channel.send({embed});
